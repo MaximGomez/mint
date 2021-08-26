@@ -1,0 +1,69 @@
+@import './mixins.scss';
+@import './vars.scss';
+
+.footer {
+    width: 100%;
+    height: 20vh;
+    background: black;
+    .footer__inner {
+        max-width: 1170px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center ;
+        .footer__flex {
+            display: flex;
+            flex-direction: row;
+            .footer__logo {
+                width: 40%;
+                height: auto;
+            }
+            .footer__inscription {
+                margin-left: 30px;
+                p {
+                    color: white;
+                }
+            }
+        }
+        .footer__comeback {
+            .comeback {
+                color: white;
+                text-transform: uppercase;
+            }
+            .footer__arrow {
+                position: relative;
+                &::before {
+                    content: '';
+                    width: 8px;
+                    height: 2px;
+                    background-color: white; 
+                    position: absolute;
+                    top: 10px;
+                    left: 12.5px;
+                    transition: .4s ease;
+                    transform: rotate(-45deg);
+                }
+                &::after {
+                    content: '';
+                    width: 8px;
+                    height: 2px;
+                    background-color: white; 
+                    position: absolute;
+                    top: 10px;
+                    left: 17.5px;
+                    transition: .4s ease;
+                    transform: rotate(45deg);
+                }
+            }
+            .footer__arrow--active {
+                &::before {
+                    top: 7.5px !important;
+                }
+                &::after {
+                    top: 7.5px !important;
+                }
+            }
+        }
+    }
+}

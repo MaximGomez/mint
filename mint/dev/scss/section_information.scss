@@ -1,0 +1,39 @@
+@import './vars';
+@import './mixins';
+
+.information__container {
+    width: 100%;
+    height: 100%;
+    // background: rgba(0, 0, 0, 0.2);
+    .information__inner {
+        max-width: 645px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .information__element {
+            width: 30%;
+            height: 50%;
+            // background: rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .information__icon {
+                margin-top: 15%;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+            }
+            .information__text {
+                text-align: center;
+                a,
+                p {
+                    white-space: nowrap;
+                    font-size: 15px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

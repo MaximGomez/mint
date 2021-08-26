@@ -1,0 +1,51 @@
+@import './vars';
+
+@mixin title {
+    width: 100%;
+    height: 15vh;
+    // background: rgba(0, 0, 0, 0.5);
+    h2 {
+        font-size: 3.75rem;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+}
+
+@mixin description {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    p {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 2rem;
+    }
+}
+
+@mixin btn {
+    button {
+        margin-top: 7.5%;
+        padding: 20px 35px;
+        background-color: $yellow;
+        border: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.85px;
+        font-weight: 700;
+        font-size: 12.5px;
+        cursor: pointer;
+        &:hover {
+            background-color: $hover_yellow;
+            transition: .4s ease;
+        }
+        &:focus {
+            background-color: $focus_yellow;
+            transition: .4s ease;
+        }
+        span {
+            position: relative;
+            bottom: 2.5px;
+            left: 7.5px;
+        }
+    }
+}

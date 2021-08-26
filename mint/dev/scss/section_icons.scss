@@ -1,0 +1,24 @@
+@import './vars';
+@import './mixins';
+
+.icons__pack {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-bottom: 15vh;
+    .icons__pack-inner {
+        max-width: 1170px;
+        height: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        .pack__element {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 35vh;
+        }
+    }
+}

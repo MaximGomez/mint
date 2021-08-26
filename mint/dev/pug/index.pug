@@ -1,0 +1,279 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/build/css/modern-normalize.min.css")
+        link(rel="stylesheet", href="/build/css/slick/slick.css")
+        link(rel="stylesheet", href="/build/css/slick/slick-theme.css")
+        link(rel="stylesheet", href="/build/css/style.min.css")
+        link(rel="shortcut icon", href="/dev/img/favicon/favicon__icon.svg")
+        title mint
+    body 
+
+    header.header 
+        nav.header__nav
+            .nav__inner
+                .nav__logo
+                    a(href="#")
+                        picture 
+                            source(srcset="/dev/img/logo/white__logo.png" media="(max-width: 767px)")
+                            img(src="/dev/img/logo/black__logo.png" alt="logotype")
+                menu.nav__menu 
+                    a(class="menu__item-work" href="#") work
+                    a(class="menu__item-about" href="#") about
+                    a(class="menu__item-blog" href="#") blog
+                    a(class="menu__item-contact" href="#") contact
+                    .burger__menu
+                        span
+                        span
+                        span
+                .burger__container 
+                    .burger__inner 
+                        a(href="#") work
+                        a(href="#") about
+                        a(href="#") blog
+                        a(href="#") contact
+        .header__content 
+            .header__inner 
+                .header__text 
+                    .header__title
+                        h1 Hello!!! <br> We Are Creative <br> Digital Agency.
+                    .header__description.desctiption
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    .header__btn.btn
+                        button(type="button") <span>send message</span>
+            .header__slider
+                .slider__element
+                    img(src="/dev/img/slider__image/slider-x1.jpg", alt="slider__image")
+                .slider__element
+                    img(src="/dev/img/slider__image/slider-x2.jpg", alt="slider__image")
+                .slider__element
+                    img(src="/dev/img/slider__image/slider-x3.jpg", alt="slider__image")
+    main.main 
+        section.work__container 
+            .work__title.title
+                h2 work showcase.
+            nav.work__nav
+                menu.work__menu 
+                    a(href="#") all
+                    a(href="#") branding
+                    a(href="#") illustration
+                    a(href="#") web
+                .drop__list
+                    a(class="drop__list--link" href="#") newest first <span class="drop__list-arrow"></span> 
+                    ul.sub__menu
+                        li
+                            a(href="#") lorem
+                        li
+                            a(href="#") lorem
+                        li
+                            a(href="#") lorem
+            .work__gallary
+                .gallery__element 
+                    img(src="/dev/img/gallery__image/370x280.jpg", alt="gallary__image")
+                    .gallery__element--active 
+                        a(href="#")
+                            h1 art work
+                        a(href="#")
+                            h4 branding
+                .gallery__element 
+                    img(src="/dev/img/gallery__image/370x500.jpg", alt="gallary__image")
+                    .gallery__element--active 
+                        a(href="#")
+                            h1 art work
+                        a(href="#")
+                            h4 branding
+                .gallery__element 
+                    img(src="/dev/img/gallery__image/370x280.jpg", alt="gallary__image")
+                    .gallery__element--active 
+                        a(href="#")
+                            h1 art work
+                        a(href="#")
+                            h4 branding
+                .gallery__element 
+                    img(src="/dev/img/gallery__image/370x500.jpg", alt="gallary__image")
+                    .gallery__element--active 
+                        a(href="#")
+                            h1 art work
+                        a(href="#")
+                            h4 branding
+                .gallery__element 
+                    img(src="/dev/img/gallery__image/370x500.jpg", alt="gallary__image")
+                    .gallery__element--active 
+                        a(href="#")
+                            h1 art work
+                        a(href="#")
+                            h4 branding
+                .gallery__element 
+                    img(src="/dev/img/gallery__image/370x280.jpg", alt="gallary__image")
+                    .gallery__element--active 
+                        a(href="#")
+                            h1 art work
+                        a(href="#")
+                            h4 branding
+            .work__btn.btn 
+                button(type="button") <span>show me more</span>
+        section.icons__pack
+            .icons__pack-inner 
+                .pack__element 
+                    img(src="/dev/img/company__icons/1.png", alt="icon")
+                .pack__element 
+                    img(src="/dev/img/company__icons/2.png", alt="icon")
+                .pack__element 
+                    img(src="/dev/img/company__icons/3.png", alt="icon")
+                .pack__element 
+                    img(src="/dev/img/company__icons/4.png", alt="icon")
+                .pack__element 
+                    img(src="/dev/img/company__icons/5.png", alt="icon")
+                .pack__element 
+                    img(src="/dev/img/company__icons/6.png", alt="icon")
+        section.about__container
+            .about__title.title
+                h2 about us 
+            .about__desctiption.description
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <br> ut labore et dolore magna aliqua.
+            .about__cards 
+                .card__element 
+                    img(src="/dev/img/about__image/370x460.jpg", alt="card__image")
+                    .card__name 
+                        .card__name-title 
+                            h3 Luke Skywalker
+                        .card__name-position 
+                            small Web Design
+                .card__element 
+                    img(src="/dev/img/about__image/370x460.jpg", alt="card__image")
+                    .card__name 
+                        .card__name-title 
+                            h3 Luke Skywalker
+                        .card__name-position 
+                            small Web Design
+                .card__element
+                    .card__inner 
+                        .card__title 
+                            h3 Little About Us 
+                        .card__description
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp orincididunt ut labore et dolore magna aliqua.
+                        .card__more 
+                            a(href="#") Read More
+        section.blog__container
+            .blog__inner
+                .blog__title.title
+                    h2 our blog. 
+                .blog__desctiption.description
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <br> ut labore et dolore magna aliqua.
+                .blog__cards 
+                    .card__element 
+                        .card__image
+                            .image__container
+                                img(src="/dev/img/blog__image/370x280.jpg", alt="card__image")
+                                .card__image--active 
+                                    a(href="#") read more 
+                            .card__inner 
+                                .card__title 
+                                    h3 super blog article!
+                                .card__description
+                                    p Lorem ipsum dolor sit amet, consectetur undo thes tabore et dolore magna aliqua.
+                                .card__date 
+                                    p 20 May 2020
+                    .card__element 
+                        .card__image
+                            .image__container
+                                img(src="/dev/img/blog__image/370x280.jpg", alt="card__image")
+                                .card__image--active 
+                                    a(href="#") read more 
+                            .card__inner 
+                                .card__title 
+                                    h3 super blog article!
+                                .card__description
+                                    p Lorem ipsum dolor sit amet, consectetur undo thes tabore et dolore magna aliqua.
+                                .card__date 
+                                    p 20 May 2020
+                    .card__element 
+                        .card__image
+                            .image__container
+                                img(src="/dev/img/blog__image/370x280.jpg", alt="card__image")
+                                .card__image--active 
+                                    a(href="#") read more 
+                            .card__inner 
+                                .card__title 
+                                    h3 super blog article!
+                                .card__description
+                                    p Lorem ipsum dolor sit amet, consectetur undo thes tabore et dolore magna aliqua.
+                                .card__date 
+                                    p 20 May 2020
+        section.contact__container
+            .contact__title.title
+                h2 contact us. 
+            .contact__desctiption.desctiption
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <br> ut labore et dolore magna aliqua.
+            .contact__form 
+                .form__container 
+                    .form__inner 
+                        .form__title 
+                            h3 Send Us Message.
+                        .form__input-name 
+                            input(type="name" placeholder="Name")
+                        .form__input-Email 
+                            input(type="email" placeholder="Email")
+                        .form__message 
+                            textarea(type="text" placeholder="Message")
+                        .form__btn.btn 
+                            button(type="button") send message
+                .form__image 
+                    img(src="/dev/img/contact__image/570x470.jpg", alt="form__image")
+        section.information__container 
+            .information__inner
+                .information__element 
+                    .information__icon 
+                        img(src="/dev/img/data__icons/x1.png", alt="icon")
+                    .information__text 
+                        .text__line
+                            p 1211 Awesome Avenu.
+                        .text__line
+                            p ny usd
+                .information__element 
+                    .information__icon 
+                        img(src="/dev/img/data__icons/x2.png", alt="icon")
+                    .information__text 
+                        .text__line
+                            a(href="#" tel="+380770088688") 
+                                p +00 123 - 456 -78 
+                        .text__line
+                            a(href="#" tel="+380770088688") 
+                                p +00 123 - 456 -78 
+                .information__element 
+                    .information__icon 
+                        img(class="img__email" src="/dev/img/data__icons/x3.png", alt="icon")
+                    .information__text 
+                        a(href="#") 
+                            p mint@mintmain.com
+        section.links__container 
+            .links__inner 
+                .link__icon
+                    a(href="#") 
+                        img(src="/dev/img/links__icons/icon__x1.png", alt="facebook__icon")
+                .link__icon
+                    a(href="#") 
+                        img(src="/dev/img/links__icons/icon__x2.png", alt="twitter__icon")
+                .link__icon
+                    a(href="#") 
+                        img(src="/dev/img/links__icons/icon__x3.png", alt="icon")
+        footer.footer
+            .footer__inner 
+                .footer__flex
+                    .footer__logo 
+                        picture 
+                            source(srcset="/dev/img/logo/white__logo.png" media="(max-width: 768px)")
+                            img(src="/dev/img/logo/white__logo.png" alt="logotype")
+                    .footer__inscription
+                        p © 2020 - Mint,All Right Reserved
+                .footer__comeback 
+                    a(class="comeback" href="#") back to top <span class="footer__arrow"></span> 
+
+
+    script(defer src="/dev/lib/jquery-3.6.0.min.js")
+    script(defer src="/dev/lib/slick.min.js")
+    script(defer src="/dev/lib/slider.js")
+    script(defer src="/build/js/script.min.js")
