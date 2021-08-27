@@ -43,7 +43,22 @@ html(lang="en")
                     .header__description.desctiption
                         p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     .header__btn.btn
-                        button(type="button") <span>send message</span>
+                        button(id="btn_modal" type="button") <span>send message</span>
+                    .modal__container#modal
+                        .modal__inner 
+                            .modal__text
+                                .modal__title 
+                                    h3 Send Us Message.
+                                .modal__input-name 
+                                    input(type="name" placeholder="Name")
+                                .modal__input-Email 
+                                    input(type="email" placeholder="Email")
+                                .modal__message 
+                                    textarea(type="text" placeholder="Message")
+                                .modal__btn.btn 
+                                    button(type="button") send message
+                            .close__modal#modal_close
+                                span
             .header__slider
                 .slider__element
                     img(src="/dev/img/slider__image/slider-x1.jpg", alt="slider__image")

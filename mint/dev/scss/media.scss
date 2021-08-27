@@ -27,14 +27,16 @@
             display: none !important;
         }
     }
-    .form__input-name,
-    .form__input-Email,
-    .form__message {
-        input {
-            width: 75% !important;
-        }
-        textarea {
-            width: 75% !important;
+}
+
+@media (max-width: 1024px) {
+    .modal__inner {
+        height: 35% !important;
+        .modal__text {
+            input,
+            textarea {
+                width: 95% !important;
+            }
         }
     }
 }
@@ -70,7 +72,7 @@
     }
     .card__inner {
         // width: 90% !important;
-        height: 90% !important;
+        height: 70% !important;
     }
     .card__description {
         p {
@@ -91,6 +93,16 @@
     }
     .comeback {
         margin-right: 25px;
+    }
+    .modal__inner {
+        height: 50% !important;
+        .modal__text {
+            input,
+            textarea {
+                width: 85% !important;
+                height: 75%;
+            }
+        }
     }
 }
 
@@ -138,6 +150,15 @@
     }
     .header__description {
         height: 35% !important;
+    }
+    .modal__inner {
+        width: 75% !important;
+    }
+    .form__btn {
+        button {
+            padding: 15px 25px !important;
+            white-space: nowrap;
+        }
     }
     .about__cards {
         grid-template-columns: repeat(2, 1fr) !important;
@@ -191,11 +212,18 @@
     .footer__comeback {
         display: none;
     }
+    .modal__inner {
+        margin-top: 10% !important;
+    }
 }
 
 @media (max-width: 576px) {
     .work__menu {
         width: 70% !important;
+    }
+    .modal__inner {
+        width: 90% !important;
+        box-shadow: 10px 10px 0px 0px rgb(80, 80, 80) !important;
     }
     .work__gallary {
         grid-template-columns: repeat(1, 1fr) !important;
@@ -296,6 +324,14 @@
     .header__description {
         height: 50% !important;
     }
+    // .modal__text {
+    //     width: 80%;
+    //     .form__title {
+    //         h3 {
+    //             font-size: 24px !important;
+    //         }
+    //     }
+    // }
     .information__container {   
         .text__line {
             font-size: 1px !important;
@@ -303,6 +339,9 @@
     }
     .links__inner {
         justify-content: space-around !important;
+    }
+    .work__title {
+        margin-bottom: 7.5%;
     }
 }
 
@@ -359,12 +398,31 @@
     }
 }
 
+@media (max-height: 800px) {
+    .modal__inner {
+        height: 62.5% !important;
+    }
+}
+
 @media (max-height: 650px) {
     .header__description {
         align-items: flex-end !important;
     }
     .work__title {
         margin-top: 17.5vh;
+    }
+    .card__description {
+        width: 75% !important;
+    }
+    .modal__inner {
+        height: 72.5% !important;
+        .modal__text {
+            .modal__btn {
+                button {
+                    padding: 15px 20px !important;
+                }
+            }
+        }
     }
 }
 
@@ -389,6 +447,38 @@
         button {
             padding: 15px 25px !important;
             margin-top: 5% !important;
+        }
+    }
+    .modal__inner {
+        // height: 82.5% !important;
+        box-shadow: 2.5px 2.5px 0px 0px rgb(80, 80, 80) !important;
+        .modal__text {
+            padding: 2.5% !important;
+            .modal__title {
+                    h3 {
+                        font-size: 20px !important;
+                        margin-top: 0px;
+                    }
+                }
+            input,
+            textarea {
+                padding: 10px !important;
+                &::placeholder {
+                    font-size: 12px !important;
+                }
+            }
+            button {
+                font-size: 10px !important;
+            }
+        }
+        .close__modal {
+            span {
+                &::before,
+                &::after {
+                    width: 30px !important;
+                    height: 1.5px !important;
+                }
+            }
         }
     }
 }
@@ -424,13 +514,21 @@
 
 @media (max-height: 380px) {
     .header__nav {
-        height: 20vh !important;
+        height: 15vh !important;
+    }
+    .modal__input-name,
+    .modal__input-Email,
+    .modal__message {
+        margin-bottom: 0px !important;
     }
     .header__nav {
         .burger__menu {
             width: 25px !important;
             height: 20px !important;
         }
+    }
+    .modal__inner {
+        height: 80% !important;
     }
     .header__title,
     .title {

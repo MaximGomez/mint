@@ -2,6 +2,20 @@
 
 document.addEventListener('DOMContentLoaded', function(event) {
 
+    const   modal = document.getElementById('modal'),
+            btnmodal = document.getElementById('btn_modal'),
+            modalClose = document.getElementById('modal_close');
+
+    btnmodal.addEventListener('click', () => {
+        modal.style.display = 'flex';
+        document.body.classList.add('_lock');
+    });
+    
+    modalClose.addEventListener('click', () => {
+        modal.style.display = 'none';
+        document.body.classList.remove('_lock');
+    });
+
     const   linksubMenu = document.querySelector('.drop__list--link'),
             subMenu = document.querySelector('.sub__menu'),
             arrow = document.querySelector('.drop__list-arrow'),
@@ -108,5 +122,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
         document.body.classList.toggle('_lock');
         burger_menu.classList.toggle('burger__menu--active');
         burger_menu_container.classList.toggle('burger__container--active');
-});
+});    
+
 });
